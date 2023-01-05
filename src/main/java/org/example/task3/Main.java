@@ -2,9 +2,9 @@ package org.example.task3;
 
 public class Main {
     public static void main(String[] args) {
-        БазаДаних db = new БазаДаних();
-        Авторизація авторизація = new Авторизація();
-        if (авторизація.авторизуватися(db)) {
+        DataBase db = new DataBase();
+        Authorization authorization = new Authorization();
+        if (authorization.authorize(db)) {
             ReportBuilder br = new ReportBuilder(db);
         }
     }
